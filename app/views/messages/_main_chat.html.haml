@@ -1,0 +1,31 @@
+.main-chat
+  .main-box
+    .main-box_left_menu
+      .main-box_left_menu_name
+        %h1 group name
+      .main-box_left_menu_member-list
+        %p Member:
+    .main-box_edit
+      %h2 Edit
+
+  .chat_box
+    .chat_box_main
+      .chat_box_main_up
+        .chat_box_main_up_user
+          %h1 aaa
+        .chat_box_main_up_date
+          %h2 2019/11/13 10:00
+
+      .chat_box_main_messages
+        %p Hello World
+
+    .chat_box_form_box
+      .chat_box_form_box_text
+        %input{class: "chat_box_form_box_text", type: "text", placeholder: "type a message"}
+        .chat_box_form_box_image
+          %label{class: "chat_box_form_box_image"}
+            = icon('fas', 'image')
+            %input{class: "chat_box_form_box_select", type: "file"}
+      .chat_box_form_box_btn
+        %input{class: "chat_box_form_box_submit", type: "submit", value: "Send"}
+   
