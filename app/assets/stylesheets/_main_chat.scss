@@ -1,0 +1,121 @@
+.main-chat {
+
+  .main-box {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px #eeeeee;
+      overflow: scroll;
+      height: 100px;
+      width: 1100px;
+      
+    &_left_menu {
+      padding: 0 0 0 40px;
+    &_name {
+    h1 {
+      font-size: 20px;
+      color: #333333;
+      padding: 35px 0px 15px 0px;
+    }}
+  
+    &_member-list {
+    p {
+      font-size: 12px;
+      color: #999999;
+    }}}
+
+    &_edit {
+    h2 {
+      border: 1px solid #57c3e9;
+      color: #57c3e9;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 30px;
+      margin-right: 40px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }}}
+
+
+  .chat_box {
+      background-color: #fafafa;
+      height: 700px;
+  
+    &_main {
+      padding: 0 0 0 40px;
+
+    &_up {
+      display: flex;
+      padding: 46px 0 10px 0px;
+
+    &_user {
+    h1 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #434A54;
+    }}
+
+    &_date {
+    h2 {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 0 0 10px;
+    }}}
+
+    &_messages {
+    p {
+      font-size: 14px;
+      color: #434A54;
+    }}}
+
+  &_form_box {
+    display: flex;
+    background-color: #ddd;
+    height: 80px;
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    align-items: center;
+    width: 1100px;
+    
+    &_text {
+      display: flex;
+      font-size: 16px;
+      color: #434A54;
+      padding: 0 0 0 40px;
+      width: 900px;
+      position: relative;
+
+    input {
+      padding: 0 0 0 10px;
+      height: 50px;
+    }}
+    
+    &_image {
+      padding-right: 0px;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+    
+    &_select {
+      display: none;
+      cursor: pointer;
+    }
+
+    &_submit {
+      background-color: #38AEF0;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 3px;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 0 40px;
+      cursor: pointer;
+    }}}
+  }
+
+  
