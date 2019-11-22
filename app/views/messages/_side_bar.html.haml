@@ -1,11 +1,11 @@
 .side_bar
   .side_box
-    .side_name
-      %p name
+    %p.side_name
+       = current_user.name
     .side_icon
       =link_to "#", class: "side_btn" do
         = icon('fas', 'edit')
-      =link_to "#", class: "side_btn" do
+      =link_to "edit_user_path(current_user)", class: "side_btn" do
         = icon('fas', 'cog')
 
   .comments
