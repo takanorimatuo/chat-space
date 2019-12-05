@@ -25,19 +25,19 @@
 
 
 
-.comments {
+.groups {
   height: 720px;
   width: 300px;
   background-color: #2F3e51;
   padding: 0px 20px;
-  &__message {
+  &group {
     padding: 20px 0px 40px 0px;
   }
-  h1 {
+  &__name {
     color: #ffffff;
     font-size: 15px bold;
   }
-  p {
+  &__message {
     font-size: 11px ;
     color: #ffffff;
     padding: 0px 0px 40px 0px;
