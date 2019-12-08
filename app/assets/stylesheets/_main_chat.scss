@@ -11,20 +11,17 @@
     &_left_menu {
       padding: 0 0 0 40px;
     &_name {
-    h1 {
       font-size: 20px;
       color: #333333;
       padding: 35px 0px 15px 0px;
-    }}
+    }
   
     &_member-list {
-    p {
       font-size: 12px;
       color: #999999;
-    }}}
+    }}
 
     &_edit {
-    h2 {
       border: 1px solid #57c3e9;
       color: #57c3e9;
       font-weight: bold;
@@ -33,9 +30,10 @@
       display: inline-block;
       margin-top: 30px;
       margin-right: 40px;
+      margin-bottom: 20px;
       padding: 10px 20px;
       cursor: pointer;
-    }}}
+    }}
 
 
   .chat_box {
