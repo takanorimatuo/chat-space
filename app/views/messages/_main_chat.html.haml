@@ -15,10 +15,10 @@
     = render @messages
         
 
-    .chat_box_form_box
-      = form_for [@group, @message] do |f|
-        = f.text_field :content, class: "chat_box_form_box_text", placeholder: "type a message" 
-        = f.label :image, class: "chat_box_form_box_image" do
-          = icon('fas', 'image')
-          = f.file_field :image, class: "chat_box_form_box_select"
-        = f.submit 'Send', class: "chat_box_form_box_submit" 
+  .form_box
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: "form_box_text", placeholder: "type a message" 
+      = f.label :image, class: "form_box_image" do
+        = icon('fas', 'image')
+        = f.file_field :image, class: "form_box_select"
+      = f.submit 'Send', class: "form_box_submit" 

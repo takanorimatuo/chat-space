@@ -33,77 +33,57 @@
       margin-bottom: 20px;
       padding: 10px 20px;
       cursor: pointer;
+
+      a {
+        color: #57c3e9;
+      }
     }}
 
 
   .chat_box {
-      background-color: #fafafa;
-      height: 700px;
-  
-    &_main {
-      padding: 0 0 0 40px;
+    background-color: #fafafa;
+    height: 610px;
+    overflow: scroll;
+    padding-bottom: 80px;
+  }
 
-    &_up {
-      display: flex;
-      padding: 46px 0 10px 0px;
 
-    &_user {
-    h1 {
-      font-size: 16px;
-      font-weight: bold;
-      color: #434A54;
-    }}
-
-    &_date {
-    h2 {
-      font-size: 12px;
-      color: #999999;
-      padding: 0 0 0 10px;
-    }}}
-
-    &_messages {
-    p {
-      font-size: 14px;
-      color: #434A54;
-    }}}
-
-  &_form_box {
-    display: flex;
+  .form_box {
     background-color: #ddd;
-    height: 80px;
+    height: 90px;
     position: fixed;
     box-sizing: border-box;
     bottom: 0;
     align-items: center;
     width: 1100px;
+    padding: 20px 50px 20px 40px;
     
     &_text {
-      display: flex;
       font-size: 16px;
       color: #434A54;
-      padding: 0 0 0 40px;
+      padding: 0 0 0 10px;
       width: 900px;
       position: relative;
-
-    input {
-      padding: 0 0 0 10px;
-      height: 50px;
-    }}
+    }
     
+    input {
+      height: 40px;
+    }
+        
     &_image {
       padding-right: 0px;
       align-items: center;
       cursor: pointer;
       position: absolute;
-      right: 10px;
-      top: 8px;
+      right: 170px;
+      top: 30px;
     }
-    
+        
     &_select {
       display: none;
       cursor: pointer;
     }
-
+    
     &_submit {
       background-color: #38AEF0;
       color: #ffffff;
@@ -111,9 +91,32 @@
       border-radius: 3px;
       display: inline-block;
       padding: 10px 20px;
-      margin: 0 40px;
       cursor: pointer;
-    }}}
-  }
-
+      float: right;
+    }}
   
+
+  .message {
+    padding: 46px 0 10px 40px;
+    .upper-message{
+      display: flex;
+      
+    &__user-name {
+      
+      font-size: 16px;
+      font-weight: bold;
+      color: #434A54;
+    }
+
+    &__date {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 0 0 10px;
+    }}
+
+    .lower-message {
+    
+      font-size: 14px;
+      color: #434A54;
+    }}
+}
