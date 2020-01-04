@@ -97,12 +97,10 @@ $(function(){
         });
         $('.chat_box').append(insertHTML);
         $('.chat_box').animate({ scrollTop: $('.chat_box')[0].scrollHeight});
-        $("#new_message")[0].reset();
-        $(".form__submit").prop("disabled", false);
       }
     })
     .fail(function() {
-      
+      alert("通信に失敗しました");
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
